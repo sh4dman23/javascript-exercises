@@ -4,11 +4,7 @@ const reverseString = function(string) {
         return undefined;
     }
 
-    let result = '';
-    string = String(string);
-    for (let i = string.length - 1; i >= 0; i--) {
-        result += string.charAt(i);
-    }
+    let result = string.split('').reverse().join('');
     return result;
 };
 
